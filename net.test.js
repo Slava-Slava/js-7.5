@@ -23,7 +23,7 @@ describe("Ticket booking test", () => {
     const actual = await getText(page, "body > main > section > div > button");
     expect(actual).contain("Получить код бронирования");
   });
-
+  
   test("Book three free tickets", async () => {
     await clickElement(page, "body > nav > a:nth-child(2)");
     await clickElement(page, "body > main > section:nth-child(1) > div:nth-child(2) > ul > li > a");
